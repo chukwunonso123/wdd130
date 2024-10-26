@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <meta name="description" content="Get in touch with Rafting Company for inquiries about our services, bookings, and more.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+<header>
+    <div class="header-container">
+        <img src="images/logo.jpg" alt="Rafting Company Logo" class="logo">
+        <h1>Rafting Company</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    <section class="contact-info">
+        <h2>Contact Information</h2>
+        <p><strong>Address:</strong> 123 Rafting Lane, Adventure City, AC 12345</p>
+        <p><strong>Phone:</strong> (123) 456-7890</p>
+        <p><strong>Email:</strong> info@raftingcompany.com</p>
+        <div class="map">
+            <h3>Our Location</h3>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345098315!2d144.9537353153152!3d-37.8172099797515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f4b11f5%3A0x5045675218ceedc0!2sRafting%20Company!5e0!3m2!1sen!2sus!4v1611098250000!5m2!1sen!2sus" 
+                width="600" 
+                height="450" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </div>
+    </section>
+    
+    <section class="employee-profiles">
+        <h2>Meet Our Team</h2>
+        <div class="profiles">
+            <figure>
+                <img src="images/employee1.jpg" alt="Employee 1">
+                <figcaption>kelly Doe - Rafting Guide</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee2.jpg" alt="Employee 2">
+                <figcaption>Jane Smith - Adventure Coordinator</figcaption>
+            </figure>
+            <figure>
+                <img src="images/employee3.jpg" alt="Employee 3">
+                <figcaption>sarah Johnson - Safety Officer</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label>Purpose of your message:</label>
+<div>
+    <input type="radio" id="inquiry" name="purpose" value="General Inquiry" required>
+    <label for="inquiry">General Inquiry</label>
+    <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+    <label for="reservation">Reservation Question</label>
+    <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+    <label for="suggestion">Website Suggestion</label>
+</div>
+
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <label>
+                <input type="checkbox" name="newsletter"> Please subscribe me to the monthly newsletter
+            </label>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</main>
+<footer>
+    <div class="footer-container">
+        <p>&copy; 2024 Onyewuchi Chukwunonso Tochukwu 😊</p>
+        <nav class="sociallinks">
+            <a href="https://facebook.com">
+                <img src="images/facebook.webp" alt="Facebook">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/x.webp" alt="Twitter">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagramlogo.webp" alt="Instagram">
+            </a>
+        </nav>
+        <p><a href="link_to_your_wireframe_image">View Contact Us Wireframe</a></p>
+    </div>
+</footer>
+</body>
+</html>
