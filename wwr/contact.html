@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="Onyewuchi Chukwunonso" />
+  <title>Contact Us | Wild Water Rafting</title>
+  <meta name="description" content="Contact Wild Water Rafting for bookings, group rates, or general inquiries. Our team is ready to help you plan an unforgettable adventure!" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles/rafting.css" />
+
+  <meta property="og:title" content="Contact Wild Water Rafting" />
+  <meta property="og:description" content="Have questions about rafting? Reach out to our friendly team today." />
+  <meta property="og:type" content="website" />
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <img src="images/logo.png" alt="Wild Water Rafting Logo" class="logo" />
+      <button class="mobile-menu-button" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="site-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="trips.html">Adventures</a>
+        <a href="contact.html" class="active">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="contact-hero">
+      <figure>
+        <img src="images/hero.jpg" alt="Rafting team paddling in canyon" class="hero-image" />
+        <figcaption>Your next adventure starts here</figcaption>
+      </figure>
+      <h1>Contact Us</h1>
+      <article>
+        <h2>We’re Here to Help</h2>
+        <figure class="float-right">
+          <img src="images/rafting-team.jpg" alt="Helpful Wild Water Rafting staff" />
+          <figcaption>Friendly staff ready to assist</figcaption>
+        </figure>
+        <p>
+          Have questions about your rafting adventure? Need assistance with bookings or special group rates? Our team is ready to help. Whether it’s your first trip or you’re coming back for more thrills, we’ll make your experience smooth, safe, and memorable.
+        </p>
+      </article>
+    </section>
+    <section class="contact-info section-container">
+      <h2>Get in Touch</h2>
+      <p class="contact-description">
+        Reach us by phone, email, or drop by our office. We look forward to hearing from you!
+      </p>
+
+      <ul class="contact-details">
+        <li><strong>Phone:</strong> +1 (555) 123‑4567</li>
+        <li><strong>Email:</strong> <a href="mailto:info@wildwaterrafting.com">info@wildwaterrafting.com</a></li>
+        <li><strong>Office Hours:</strong> Monday – Friday, 8:00 AM – 6:00 PM</li>
+        <li><strong>Address:</strong> 123 River Run Blvd, Rapids City, CO 81000</li>
+      </ul>
+
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3068.8199757797427!2d-105.01460768464068!3d39.73923697944783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c78d59a264be1%3A0x9c6b8fcaa63406aa!2s123%20River%20Run%20Blvd%2C%20Rapids%20City%2C%20CO!5e0!3m2!1sen!2sus!4v1700000000000"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+    <section class="team">
+      <h2>Meet Our Team</h2>
+      <div class="employee-profiles">
+        <figure>
+          <img src="images/employee1.jpg" alt="Emily – Customer Service Manager">
+          <figcaption>Emily – Customer Service Manager</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee2.jpg" alt="Jake – River Guide Lead">
+          <figcaption>Jake – River Guide Lead</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee3.jpg" alt="Sophie – Booking Specialist">
+          <figcaption>Sophie – Booking Specialist</figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="contact-form-section">
+      <h2>Send Us a Message</h2>
+      <form action="#" method="post">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required>
+
+        <fieldset>
+          <legend>Purpose of Message:</legend>
+          <label><input type="radio" name="purpose" value="General Inquiry" required> General Inquiry</label>
+          <label><input type="radio" name="purpose" value="Reservation Question"> Reservation Question</label>
+          <label><input type="radio" name="purpose" value="Website Suggestion"> Website Suggestion</label>
+        </fieldset>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <label class="newsletter-label">
+          <input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter
+        </label>
+
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 Wild Water Rafting | Onyewuchi Chukwunonso</p>
+    <div class="social-media">
+      <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook" /></a>
+      <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram" /></a>
+      <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter" /></a>
+    </div>
+
+    <p><a href="images/contact-wireframe.png" target="_blank">View Contact Page Wireframe</a></p>
+  </footer>
+  <script>
+    function toggleMenu() {
+      document.getElementById('site-nav').classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
