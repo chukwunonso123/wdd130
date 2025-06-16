@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta & SEO -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Wild Water Rafting – book world‑class white‑water adventures, explore trip options, and join our newsletter for exclusive deals." />
+  <title>Home | Wild Water Rafting</title>
+
+  <!-- Google Fonts (preconnect + single request) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="styles/rafting.css" />
+</head>
+<body>
+
+  <!-- ── Header / Navigation ─────────────────────────── -->
+  <header>
+    <div class="header-content">
+      <img src="images/logo.png" alt="Wild Water Rafting Logo" class="logo" />
+      <button class="mobile-menu-button" onclick="toggleMenu()">☰</button>
+      <nav id="site-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="trips.html">Trips</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── Hero Section ─────────────────────────────────── -->
+  <section class="hero" id="home-hero">
+    <img src="images/hero.jpg" alt="Raft splashing through rapids" class="hero-image" />
+    <h1>Experience the Rush</h1>
+    <article>
+      <p>
+        Discover the ultimate white‑water thrills with Wild Water Rafting. Seasoned guides, breathtaking canyons, and memories that last a lifetime—your adventure starts here!
+      </p>
+      <a href="trips.html" class="btn-primary">View Trips</a>
+    </article>
+  </section>
+
+  <!-- ── Call to Action / Newsletter Banner ───────────── -->
+  <section class="banner">
+    <div class="banner-content">
+      <div class="banner-text">
+        <h2>Join Our River Community</h2>
+        <p>Sign up for trip alerts, insider tips, and exclusive discounts.</p>
+      </div>
+      <form class="newsletter-form" action="#" method="post">
+        <label class="visually-hidden" for="newsletter-email">Email address</label>
+        <input type="email" id="newsletter-email" name="email" placeholder="you@example.com" required />
+        <button type="submit" class="btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ── Trip Highlights Grid ─────────────────────────── -->
+  <section class="section-container">
+    <h2>Adventure Highlights</h2>
+
+    <div class="trip-grid">
+      <!-- Grid Item 1 -->
+      <figure class="trip-card">
+        <img src="images/rafting3.jpg" alt="Family rafting calm rapids" />
+        <figcaption>
+          <h3>Beginner Bliss</h3>
+          <p>Gentle Class II–III rapids perfect for families and first‑timers.</p>
+        </figcaption>
+      </figure>
+      <!-- Grid Item 2 -->
+      <figure class="trip-card">
+        <img src="images/rafting1.jpg" alt="Boat dropping over big wave" />
+        <figcaption>
+          <h3>Adrenaline Rush</h3>
+          <p>Power through Class IV waves and technical drops with expert guides.</p>
+        </figcaption>
+      </figure>
+  
+      <figure class="trip-card">
+        <img src="images/rafting2.jpg" alt="Raft floating in scenic canyon" />
+        <figcaption>
+          <h3>Scenic Escape</h3>
+          <p>Multi‑day float trips featuring pristine wilderness campsites.</p>
+        </figcaption>
+      </figure>
+    </div>
+
+    <div style="text-align:center; margin-top:2rem;">
+      <a href="trips.html" class="btn-primary">Explore All Trips</a>
+    </div>
+  </section>
+  <section class="section-container" style="background:var(--accent1-color);">
+    <h2>What Rafters Say</h2>
+    <div class="reviews-grid">
+      <blockquote>
+        <p>“Hands‑down the best family adventure we’ve taken—safe, thrilling, and gorgeous!”</p>
+        <cite>— Lena W.</cite>
+      </blockquote>
+      <blockquote>
+        <p>“Incredible guides! They turned my fear into pure adrenaline‑charged fun.”</p>
+        <cite>— Alex D.</cite>
+      </blockquote>
+      <blockquote>
+        <p>“The scenery, the rapids, the food—five stars. Already planning my next trip.”</p>
+        <cite>— Priya S.</cite>
+      </blockquote>
+    </div>
+  </section>
+  <footer>
+    <p>© 2025 Wild Water Rafting | Onyewuchi Chukwunonso</p>
+    <div class="social-media">
+      <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook" /></a>
+      <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram" /></a>
+      <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter" /></a>
+    </div>
+  </footer>
+
+  <!-- Mobile nav toggle -->
+  <script>
+    function toggleMenu() {
+      document.getElementById('site-nav').classList.toggle('active');
+    }
+  </script>
+</body>
+</html>

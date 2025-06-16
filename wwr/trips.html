@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore all white-water rafting trips offered by Wild Water Rafting. From beginner floats to extreme adventures, we have something for everyone." />
+  <title>Trips | Wild Water Rafting</title>
+
+  <!-- Google Fonts and CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@300;400;600&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/rafting.css" />
+</head>
+<body>
+
+  <!-- Header and Navigation -->
+  <header>
+    <div class="header-content">
+      <img src="images/logo.png" alt="Wild Water Rafting Logo" class="logo" />
+      <button class="mobile-menu-button" onclick="toggleMenu()">☰</button>
+      <nav id="site-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="trips.html" class="active">Trips</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <section class="hero" id="trips-hero">
+    <img src="images/hero.jpg" alt="Group rafting through wild rapids" class="hero-image" />
+    <h1>Choose Your Adventure</h1>
+    <article>
+      <p>Whether you’re new to rafting or a seasoned rafter, we’ve got the perfect trip for you. Browse our packages below and book today!</p>
+      <a href="contact.html" class="btn-primary">Book Now</a>
+    </article>
+  </section>
+
+  <!-- Trip Packages -->
+  <section class="section-container">
+    <h2>Trip Options</h2>
+    <div class="trip-grid">
+      <!-- Beginner -->
+      <div class="trip-card">
+        <img src="images/rafting5.jpg" alt="Family rafting gently down river" />
+        <div class="trip-info">
+          <h3>Beginner Bliss</h3>
+          <p>Perfect for families and first-timers. Class II–III rapids over a half-day float. Includes lunch and gear.</p>
+          <p><strong>Duration:</strong> 4 hours</p>
+          <p><strong>Cost:</strong> $59/person</p>
+        </div>
+      </div>
+
+      <!-- Intermediate -->
+      <div class="trip-card">
+        <img src="images/rafting1.jpg" alt="Exciting river twists and turns" />
+        <div class="trip-info">
+          <h3>Rapid Rush</h3>
+          <p>A balanced mix of thrill and scenery. Class III–IV rapids through canyon landscapes. Half- or full-day options.</p>
+          <p><strong>Duration:</strong> 6 hours</p>
+          <p><strong>Cost:</strong> $89/person</p>
+        </div>
+      </div>
+
+      <!-- Advanced -->
+      <div class="trip-card">
+        <img src="images/rafting4.jpg" alt="Raft charging through huge whitewater" />
+        <div class="trip-info">
+          <h3>Extreme Expedition</h3>
+          <p>For adrenaline junkies. Class IV+ rapids, big drops, overnight camping under the stars.</p>
+          <p><strong>Duration:</strong> 2 days</p>
+          <p><strong>Cost:</strong> $199/person</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quote Section -->
+  <section class="section-container quote">
+    <blockquote>
+      <p>"Life is a journey, not a destination. As we travel along life's pathway, we encounter challenges, obstacles, and uncertainties. But we must not permit these to divert us from our destiny. We must continue on, even when the road ahead seems uncertain. We must finish strong."</p>
+      <cite>— President Thomas S. Monson, <em>"Finishers Wanted"</em>, Ensign, June 2001</cite>
+    </blockquote>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Wild Water Rafting | Onyewuchi Chukwunonso</p>
+    <div class="social-media">
+      <a href="https://facebook.com"><img src="images/facebook.png" alt="Facebook" /></a>
+      <a href="https://instagram.com"><img src="images/instagram.png" alt="Instagram" /></a>
+      <a href="https://twitter.com"><img src="images/twitter.png" alt="Twitter" /></a>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script>
+    function toggleMenu() {
+      document.getElementById('site-nav').classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
